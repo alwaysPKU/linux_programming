@@ -7,3 +7,8 @@
 5.gcc -c program.c
   gcc -o program.o bill.o
 6.执行./program
+7.也可以创建库文件，用归档工具ar
+  ar crv libfoo.a bill.o fred.o
+  (ranlib libfoo.a)
+  gcc -o program program.o libfoo.a
+  即可
